@@ -53,7 +53,7 @@ $source = [
     'ภาษาไทย',
     'ยาว',
     'แตก',
-    'คำ',
+    'คำ'
 ];
 
 Wordbreaker::add($source);
