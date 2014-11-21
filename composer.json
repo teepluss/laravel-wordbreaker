@@ -19,7 +19,7 @@
         "psr-0": {
             "Teepluss\\Wordbreaker": "src/"
         },
-        "classmap": ["vendor/veer66/phlongtaiam/src/"]
+        "classmap": ["phlongtaiam/src/"]
     },
     "minimum-stability": "stable"
 }
