@@ -1,0 +1,25 @@
+{
+    "name": "teepluss/wordbreaker",
+    "description": "Word breaker is Thai wording separator for using with fulltext software.",
+    "keywords": ["laravel", "laravel4", "fulltext", "tokenizer"],
+    "homepage": "https://github.com/teepluss/laravel-wordbreaker",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Teepluss",
+            "email": "teepluss@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Teepluss\\Wordbreaker": "src/"
+        },
+        "classmap": ["vendor/veer66/phlongtaiam/src/"]
+    },
+    "minimum-stability": "stable"
+}
