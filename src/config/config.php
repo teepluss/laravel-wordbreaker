@@ -14,14 +14,18 @@ return array(
 
     'dict' => function()
     {
-        // return Cache::remember('dictionary', 60, function()
-        // {
-        //     return Dictionary::orderBy('word')->lists('word');
-        // });
+        // Example using database as default data.
+        /*
+        return Cache::remember('dictionary', 60, function()
+        {
+            return Dictionary::orderBy('word')->lists('word');
+        });
+        */
 
-        return array();
+        $dict = Config::get('wordbreaker::dictionary');
+
+        return $dict['dictionary'][$dict['default']];
     },
-
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +38,6 @@ return array(
 
     'minLen' => 2,
 
-
     /*
     |--------------------------------------------------------------------------
     | Re-sorting Dictionary Array
@@ -46,7 +49,6 @@ return array(
     */
 
     'array_sorting' => true,
-
 
     /*
     |--------------------------------------------------------------------------
